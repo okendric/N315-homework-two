@@ -1,0 +1,17 @@
+.homeContent {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    .homeParagraph {
+        width: 800px;
+        height: 500px;
+
+        p {
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+}
