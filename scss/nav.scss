@@ -83,6 +83,8 @@
 
         .bars {
             display: block;
+            z-index: 99;
+            cursor: pointer;
         }
 
         .links {

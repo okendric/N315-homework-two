@@ -59,6 +59,8 @@
 @media screen and (max-width: 960px) {
   .navHolder .bars {
     display: block;
+    z-index: 99;
+    cursor: pointer;
   }
   .navHolder .links {
     flex-direction: column;
@@ -74,14 +76,34 @@ html {
   background-color: rgb(2, 44, 2);
 }
 
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #0e8017;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+footer p {
+  color: white;
+  -webkit-text-stroke: 2px black;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+
 .homeContent {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   padding-top: 100px;
+  align-items: center;
 }
 .homeContent .homeParagraph {
-  width: 800px;
-  height: 500px;
+  max-width: 800px;
+  min-height: 200px;
 }
 .homeContent .homeParagraph p {
   padding: 10px;
@@ -89,6 +111,122 @@ html {
   color: white;
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media screen and (max-width: 975px) {
+  .homeContent .homeImage img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 630px) {
+  .homeContent .homeImage img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+.browseContent {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  min-height: 1000px;
+}
+.browseContent .browse-area {
+  width: 1600px;
+  height: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.browseContent .browse-area #tom {
+  padding-bottom: 100px;
+}
+.browseContent .browse-area .reusable {
+  display: flex;
+  margin: 30px;
+}
+.browseContent .browse-area .reusable .image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.browseContent .browse-area .reusable .image #bugsAdjust {
+  object-position: -250px;
+}
+.browseContent .browse-area .reusable .textArea {
+  margin-left: 20px;
+  margin-top: 50px;
+  width: 150px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.browseContent .browse-area .reusable .textArea .text p {
+  text-align: center;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+}
+
+.avatarContent {
+  padding-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.avatarContent .avatar-wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.avatarContent .avatar-wrap .avatar-text1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 240px;
+  width: 500px;
+  padding: 30px;
+  background-color: rgb(27, 122, 39);
+}
+.avatarContent .avatar-wrap .avatar-text1 p {
+  color: white;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.avatarContent .avatar-wrap .avatar-img img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1100px) {
+  .avatarContent .avatar-wrap .avatar-img img {
+    width: 300px;
+  }
+  .avatarContent .avatar-wrap .avatar-text1 {
+    width: 300px;
+  }
+  .avatarContent .avatar-wrap .avatar-text1 p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 715px) {
+  .avatarContent .avatar-wrap .avatar-img img {
+    width: 200px;
+  }
+  .avatarContent .avatar-wrap .avatar-img #moveATad {
+    object-position: -200px 0;
+  }
+  .avatarContent .avatar-wrap .avatar-text1 {
+    width: 200px;
+  }
+  .avatarContent .avatar-wrap .avatar-text1 p {
+    font-size: 22px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
